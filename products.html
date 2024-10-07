@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Nusantara - Produk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="#">Kopi Nusantara</a></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Produk</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="testimonials.html">Testimoni</a></li>
+            <li><a href="contact.html" class="cta">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <main class="products">
+        <h2 class="gallery-title">Produk Kami</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="foto_kopi/kopi-gayo.jpeg" alt="Kopi Gayo">
+                <h3>Kopi Gayo</h3>
+                <p>Kopi arabika khas Aceh dengan cita rasa floral. Cocok disajikan dengan metode manual brew untuk menonjolkan aroma dan rasa yang lembut.</p>
+                <button class="add-to-cart" onclick="addToCart('Kopi Gayo', 50000)">
+                    <span class="plus-icon">+</span>
+                </button>
+            </div>
+            <div class="grid-item">
+                <img src="foto_kopi/kopi-toraja.jpg" alt="Kopi Toraja">
+                <h3>Kopi Toraja</h3>
+                <p>Kopi Toraja yang memiliki rasa earthy dengan aftertaste coklat. Nikmati dengan cara French press untuk menghasilkan cita rasa yang lebih kaya.</p>
+                <button class="add-to-cart" onclick="addToCart('Kopi Toraja', 60000)">
+                    <span class="plus-icon">+</span>
+                </button>
+            </div>
+            <div class="grid-item">
+                <img src="foto_kopi/kopi-kintamani.jpeg" alt="Kopi Kintamani">
+                <h3>Kopi Kintamani</h3>
+                <p>Kopi Bali dengan rasa fruity yang menyegarkan. Sangat enak disajikan dingin atau sebagai iced coffee.</p>
+                <button class="add-to-cart" onclick="addToCart('Kopi Kintamani', 55000)">
+                    <span class="plus-icon">+</span>
+                </button>
+            </div>
+            <div class="grid-item">
+                <img src="foto_kopi/kopi-jawa.jpeg" alt="Kopi Jawa">
+                <h3>Kopi Jawa</h3>
+                <p>Kopi robusta dari Jawa dengan rasa strong dan pekat. Cocok untuk penyuka kopi yang kuat, bisa dinikmati dengan tambahan gula atau krim.</p>
+                <button class="add-to-cart" onclick="addToCart('Kopi Jawa', 45000)">
+                    <span class="plus-icon">+</span>
+                </button>
+            </div>
+        </div>
+
+
+   <!-- Bagian Keranjang -->
+<aside id="cart">
+    <h2>Keranjang</h2>
+    <div id="cart-items">
+        <!-- Item keranjang akan ditampilkan di sini menggunakan JavaScript -->
+    </div>
+    <div class="cart-summary">
+        <h3>Total Harga: <span id="total-price">Rp0</span></h3>
+        <button id="checkout-button" class="cta" onclick="window.location.href='checkout.html'">Checkout</button>
+    </div>
+</aside>
+
+        <!-- Notifikasi -->
+        <div id="toast-notification" class="hidden">
+            Produk berhasil ditambahkan ke keranjang!
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Kopi Nusantara | Rasakan Otentisitas Kopi Indonesia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
